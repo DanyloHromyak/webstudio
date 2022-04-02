@@ -16,45 +16,53 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/portfolio.html">
     <title>Web Studio</title>
   </head>
+  <style>
+  </style>
   <body>
-    <div class="modal modal_open" id="contactModal">
+
+    <!-- ===== MODAL ====== -->
+
+    <div class="modal" id="contactModal" style="display: none;">
       <div class="modal__content">
-        <button class="modal__close" type="button">x</button>
+        <button class="modal__close" id="contactModalClose" type="button">
+          <img src="/img/cross.svg" alt="">
+        </button>
         <h3 class="modal__title">Залишіть свої дані і ми вам передзвонимо</h3>
   
         <form class="modal__form">
-  
           <div class="form-field">
             <label for="nameInput" class="form-field__label">Ім'я</label>
             <div class="form-field__control">
-              <!-- <img src="/img/Person.svg" alt="Person" class="form-field__icon"> -->
-              <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z"
-                  fill="#212121" />
-              </svg>
-  
-              <input type="text" class="form-field__input form-field__input_icon-left" id="nameInput" autocomplete="name">
+              <input type="text" placeholder="Ім'я" class="form-field__input form-field__input__icon-left" id="nameInput" autocomplete="name">
+              <svg class="form-field__icon" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6C7.6575 6 9 4.6575 9 3C9 1.3425 7.6575 0 6 0C4.3425 0 3 1.3425 3 3C3 4.6575 4.3425 6 6 6ZM6 7.5C3.9975 7.5 0 8.505 0 10.5V11.25C0 11.6625 0.3375 12 0.75 12H11.25C11.6625 12 12 11.6625 12 11.25V10.5C12 8.505 8.0025 7.5 6 7.5Z" fill="#212121"/>
+                </svg>  
             </div>
           </div>
   
           <div class="form-field">
             <label for="phoneInput" class="form-field__label">Телефон</label>
             <div class="form-field__control">
-              <img src="/img/Phone.svg" alt="Phone" class="form-field__icon">
-              <input type="tel" class="form-field__input form-field__input_icon-left" id="phoneInput" autocomplete="tel">
+              <input type="tel" placeholder="Телефон" class="form-field__input form-field__input__icon-left" id="phoneInput" autocomplete="tel">
+              <svg class="form-field__icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.996 9.12268L10.1579 8.91281C9.71644 8.86216 9.28224 9.01413 8.97105 9.32531L7.63948 10.6569C5.59147 9.61479 3.91254 7.94308 2.87044 5.88782L4.20925 4.54901C4.52043 4.23782 4.6724 3.80361 4.62174 3.36217L4.41188 1.53849C4.32504 0.807567 3.70991 0.257568 2.97176 0.257568H1.71979C0.902035 0.257568 0.221776 0.93783 0.272434 1.75559C0.655984 7.93584 5.59871 12.8714 11.7717 13.2549C12.5894 13.3056 13.2697 12.6253 13.2697 11.8075V10.5556C13.2769 9.82465 12.7269 9.20952 11.996 9.12268Z" fill="#212121"/>
+                </svg>
             </div>
           </div>
   
           <div class="form-field">
             <label for="emailInput" class="form-field__label">Пошта</label>
             <div class="form-field__control">
-              <img src="img/Envelope_input.svg" alt="Envelope" class="form-field__icon">
-              <input type="email" class="form-field__input form-field__input_icon-left" id="emailInput"
-                autocomplete="email">
+              <input type="email" placeholder="E-mail" class="form-field__input form-field__input__icon-left" id="emailInput"
+              autocomplete="email">
+              <svg class="form-field__icon" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 0H2C1.175 0 0.5075 0.675 0.5075 1.5L0.5 10.5C0.5 11.325 1.175 12 2 12H14C14.825 12 15.5 11.325 15.5 10.5V1.5C15.5 0.675 14.825 0 14 0ZM13.7 3.1875L8.3975 6.5025C8.1575 6.6525 7.8425 6.6525 7.6025 6.5025L2.3 3.1875C2.1125 3.0675 2 2.865 2 2.6475C2 2.145 2.5475 1.845 2.975 2.1075L8 5.25L13.025 2.1075C13.4525 1.845 14 2.145 14 2.6475C14 2.865 13.8875 3.0675 13.7 3.1875Z" fill="#212121"/>
+                </svg>                              
             </div>
           </div>
   
@@ -66,58 +74,61 @@
           </div>
   
           <div class="checkbox">
-            <input type="checkbox" class="checkbox__input visually-hidden" id="contactAccept">
-            <label for="contactAccept" class="checkbox__label">
-              <svg class="checkbox__icon" width="13" height="10" viewBox="0 0 13 10" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M1.95703 4.75166L1.88825 4.68604L1.81923 4.75141L0.93123 5.59258L0.854858 5.66492L0.930974 5.73753L4.42671 9.07236L4.49574 9.1382L4.56476 9.07236L12.069 1.91352L12.1449 1.84116L12.069 1.76881L11.1873 0.927644L11.1183 0.861826L11.0493 0.927611L4.49577 7.17353L1.95703 4.75166Z"
-                  fill="white" stroke="white" stroke-width="0.2" />
-              </svg>
+            <!-- <label for="contactAccept" class="checkbox__label"> -->
+              <input type="checkbox" class="checkbox__input" id="contactAccept">
+
             </label>
+            <label for="contactAccept" class="checkbox__text">Дозволяю розсилку і приймаю</label>
+            <a href="#" target="_blank" class="link__underline">Умови договору</a>
           </div>
-  
+
+          <button type="submit" class="modal__btn">Надіслати</button>
+
         </form>
       </div>
     </div>
 
+    <!-- --- MODAL --- -->
 
     <div class="wrapper">
+
+      <!-- ======= HEADER ======== -->
       <header class="header">
-        <div class="container container_row">
-          <a href="#" class="logo">
-            <span class="logo__primary">Web</span>Studio
-          </a>
-          <input type="checkbox" id="toggle"/>
-          <label for="toggle" id="toggleNav">
-            <span class="fa-bars fa-bar1"></span>
-            <span class="fa-bars fa-bar2"></span>
-            <span class="fa-bars fa-bar3"></span>
-          </label>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="" class="menu__link menu__link_active">Студія</a>
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link">Портфоліо</a>
-                <!-- menu__link_active -->
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__info">
-            <a href="mailto:info@devstudio.com" class="header__email">
-              info@devstudio.com
+        <div class="container">
+          <div class="navbar">
+            <a href="#" class="logo">
+              <span class="logo__primary">Web</span>Studio
             </a>
-            <a href="tel:+380961111111" class="header__phone">
-              +38 096 111 11 11
-            </a>
+            <input type="checkbox" class="toggle"/>
+            <div class="hamburger"></div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link menu__link_active">Студія</a>
+                </li>
+                <li class="menu__item">
+                  <a target="_blank" href="/portfolio.html" class="menu__link">Портфоліо</a>
+                  <!-- menu__link_active -->
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__info">
+              <a href="mailto:info@devstudio.com" class="header__email">
+                info@devstudio.com
+              </a>
+              <a href="tel:+380961111111" class="header__phone">
+                +38 096 111 11 11
+              </a>
+            </div>
           </div>
         </div>
       </header>
+
+      <!-- --- HEADER --- -->
+
       <main class="main">
 
         <!-- ====== HERO ====== -->
@@ -125,7 +136,7 @@
         <section class="hero">
           <div class="container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="btn">Замовити послугу</button>
+            <button class="btn" id="contact" type="button">Замовити послугу</button>
           </div>
         </section>
 
@@ -641,6 +652,7 @@
             </ul>
           </div>
         </section>
+
         <!-- /Team -->
 
         <!-- Clients -->
@@ -990,6 +1002,7 @@
         </section>
 
         <!-- /Clients -->
+        
       </main>
 
       <!-- Footer -->
@@ -1010,7 +1023,7 @@
             <div class="footer__socials">
               <h3 class="footer__title">Приєднюйтесь</h3>
   
-              <ul class="socials socials_dark">
+              <ul class="socials socials_dark footer__socials-list">
                 <li class="socials__item">
                   <a href="#" class="socials__link" target="_blank">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1090,9 +1103,10 @@
       </footer>
 
       <!-- Footer -->
+
     </div>
 
 
-    <script src="/script/main.js"></script>
+    <script async src="/script/app.js"></script> 
 </body>
 </html>
