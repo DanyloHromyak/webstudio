@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/portfolio.html">
+    <script src="https://kit.fontawesome.com/947b2aaaa7.js" crossorigin="anonymous"></script>
     <title>Web Studio</title>
   </head>
   <style>
@@ -99,29 +100,52 @@
             <a href="#" class="logo">
               <span class="logo__primary">Web</span>Studio
             </a>
-            <input type="checkbox" class="toggle"/>
-            <div class="hamburger"></div>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__item">
-                  <a href="#" class="menu__link menu__link_active">Студія</a>
-                </li>
-                <li class="menu__item">
-                  <a target="_blank" href="/portfolio.html" class="menu__link">Портфоліо</a>
-                  <!-- menu__link_active -->
-                </li>
-                <li class="menu__item">
-                  <a href="" class="menu__link">Контакти</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__info">
-              <a href="mailto:info@devstudio.com" class="header__email">
-                info@devstudio.com
-              </a>
-              <a href="tel:+380961111111" class="header__phone">
-                +38 096 111 11 11
-              </a>
+
+           <input type="checkbox" id="toggle" class="toggle">
+           <label class="toggler" id="toggleNav" for="toggle">
+              <span class="hamburger line-1"></span>
+              <span class="hamburger line-2"></span>
+              <span class="hamburger line-3"></span>
+           </label>
+
+            <div class="navbar__content">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__item">
+                    <a href="#" class="menu__link menu__link_active">Студія</a>
+                  </li>
+                  <li class="menu__item">
+                    <a target="_blank" href="/portfolio.html" class="menu__link">Портфоліо</a>
+                    <!-- menu__link_active -->
+                  </li>
+                  <li class="menu__item">
+                    <a href="" class="menu__link">Контакти</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__info">
+                <a href="mailto:info@devstudio.com" class="header__email">
+                  info@devstudio.com
+                </a>
+                <a href="tel:+380961111111" class="header__phone">
+                  +38 096 111 11 11
+                </a>
+                
+                <ul class="navbar-socials">
+                  <li class="navbar-socials__item">
+                    <a href="" class="navbar-socials__link">Instagram</a>
+                  </li>
+                  <li class="navbar-socials__item">
+                    <a href="" class="navbar-socials__link">Twitter</a>
+                  </li>
+                  <li class="navbar-socials__item">
+                    <a href="" class="navbar-socials__link">Facebook</a>
+                  </li>
+                  <li class="navbar-socials__item">
+                    <a href="" class="navbar-socials__link">LinkedIn</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

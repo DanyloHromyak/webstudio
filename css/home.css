@@ -83,7 +83,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .specifics__grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -141,7 +141,7 @@
       flex-direction: column;
   }
   .work-item {
-    width: 325px;
+    width: 100%;
   }
 }
 
@@ -203,7 +203,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .team__members {
     grid-template-columns: 1fr;
   }
@@ -249,6 +249,12 @@
 @media (max-width: 991px) {
   .clients__list {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .clients__list {
+    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
   }
 }
 

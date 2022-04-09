@@ -10,7 +10,6 @@
   gap: 8px;
   margin-bottom: 50px;
 }
-
 .tags__label {
   font-size: 16px;
   line-height: 26px;
@@ -108,5 +107,24 @@
   line-height: 30px;
   letter-spacing: 0.03em;
 }
-
+@media (max-width: 991px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 624px) {
+  .tags__item {
+    display: block;
+    margin: 8px 0;
+  }
+  .tags {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+@media (max-width: 576px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
 /* --- PROJECTS --- */

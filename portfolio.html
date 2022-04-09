@@ -22,43 +22,66 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="container container_row">
-          <a href="#" class="logo">
-            <span class="logo__primary">Web</span>Studio
-          </a>
-          <input type="checkbox" id="toggle" />
-          <label for="toggle" id="toggleNav">
-            <span class="fa-bars fa-bar1"></span>
-            <span class="fa-bars fa-bar2"></span>
-            <span class="fa-bars fa-bar3"></span>
-          </label>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="" class="menu__link">Студія</a>
-              </li>
-              <li class="menu__item">
-                <a href="/portfolio.html" class="menu__link menu__link_active"
-                  >Портфоліо</a
-                >
-                <!-- menu__link_active -->
-              </li>
-              <li class="menu__item">
-                <a href="" class="menu__link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__info">
-            <a href="mailto:info@devstudio.com" class="header__email">
-              info@devstudio.com
-            </a>
-            <a href="tel:+380961111111" class="header__phone">
-              +38 096 111 11 11
-            </a>
-          </div>
-        </div>
-      </header>
+           <!-- ======= HEADER ======== -->
+           <header class="header">
+            <div class="container">
+              <div class="navbar">
+                <a href="#" class="logo">
+                  <span class="logo__primary">Web</span>Studio
+                </a>
+    
+               <input type="checkbox" id="toggle" class="toggle">
+               <label class="toggler" id="toggleNav" for="toggle">
+                  <span class="hamburger line-1"></span>
+                  <span class="hamburger line-2"></span>
+                  <span class="hamburger line-3"></span>
+               </label>
+    
+                <div class="navbar__content">
+                  <nav class="menu">
+                    <ul class="menu__list">
+                      <li class="menu__item">
+                        <a href="#" class="menu__link">Студія</a>
+                      </li>
+                      <li class="menu__item">
+                        <a target="_blank" href="/portfolio.html" class="menu__link  menu__link_active">Портфоліо</a>
+                        <!-- menu__link_active -->
+                      </li>
+                      <li class="menu__item">
+                        <a href="" class="menu__link">Контакти</a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="header__info">
+                    <a href="mailto:info@devstudio.com" class="header__email">
+                      info@devstudio.com
+                    </a>
+                    <a href="tel:+380961111111" class="header__phone">
+                      +38 096 111 11 11
+                    </a>
+                    
+                    <ul class="navbar-socials">
+                      <li class="navbar-socials__item">
+                        <a href="" class="navbar-socials__link">Instagram</a>
+                      </li>
+                      <li class="navbar-socials__item">
+                        <a href="" class="navbar-socials__link">Twitter</a>
+                      </li>
+                      <li class="navbar-socials__item">
+                        <a href="" class="navbar-socials__link">Facebook</a>
+                      </li>
+                      <li class="navbar-socials__item">
+                        <a href="" class="navbar-socials__link">LinkedIn</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+
+    <!-- ----- HEADER ------  -->
+
       <main class="main">
         <div class="container">
           <ul class="tags">
@@ -246,10 +269,8 @@
               <a href="index.html" class="logo logo_dark footer__logo">
                 <span class="logo__primary">Web</span>Studio
               </a>
-
               <a href="#" class="footer__address footer__link"
-                >м. Київ, просп Лесі Українки, 26</a
-              >
+                >м. Київ, просп Лесі Українки, 26</a>
               <a
                 href="mailto:info@example.com"
                 class="footer__email footer__link"
@@ -260,7 +281,7 @@
               >
             </div>
 
-            <div class="footer__socials">
+            <div class="footer__socials footer__socials-list">
               <h3 class="footer__title">Приєднюйтесь</h3>
 
               <ul class="socials socials_dark">
