@@ -390,7 +390,7 @@ textarea.form-field__input {
   margin-right: 10px;
   height: 12px;
   width: 16px;
-  background: url(/img/envelope.svg) center / cover no-repeat;
+  background: url(../img/envelope.svg) center / cover no-repeat;
 }
 
 .header__phone::before {
@@ -399,7 +399,7 @@ textarea.form-field__input {
   margin-right: 10px;
   height: 16px;
   width: 10px;
-  background-image: url(/img/smartphone.svg);
+  background-image: url(../img/smartphone.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
