@@ -33,7 +33,10 @@
 
 /* ===== HERO ===== */
 .hero {
-  background: url(/img/Hero_Background.jpg) center / cover no-repeat;
+  background-image: url(../img/hero-bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 200px 0;
   text-align: center;
 }
