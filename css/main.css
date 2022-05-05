@@ -199,6 +199,7 @@ section {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+
 .modal__close {
   display: grid;
   place-items: center;
@@ -307,6 +308,17 @@ textarea.form-field__input {
   border-radius: 4px;
 }
 
+
+@media (max-width: 768px) {
+  .modal__content {
+    padding: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .modal__content {
+    padding: 10px;
+  }
+}
 /* --- MODAL --- */
 
 /* =====  HEADER ===== */
@@ -354,7 +366,7 @@ textarea.form-field__input {
 .menu__link {
   display: block;
   position: relative;
-  padding: 31px 0;
+  padding: 0.75em 0;
 }
 
 .menu__link_active {
@@ -433,7 +445,8 @@ textarea.form-field__input {
 }
 
 .toggle:checked ~ .toggler {
-  display: fixed;
+  position: fixed;
+  right: 15px;
 }
 
 .toggler {
@@ -441,7 +454,7 @@ textarea.form-field__input {
   cursor: pointer;
   position: relative;
   width: 24px;
-  height: 30px;
+  height: 18px;
 }
 
 .hamburger {
@@ -484,7 +497,7 @@ textarea.form-field__input {
 }
 
 .toggler:hover > .hamburger {
-  background: #177ce8;
+  background-color: #177ce8;
 }
 
 .navbar-socials__item {
@@ -526,17 +539,16 @@ textarea.form-field__input {
   }
   .navbar__content {
     clip-path: circle(0 at top right);
-    padding-left: 40px;
+    padding-left: 1.5em;
     font-weight: 500;
     letter-spacing: 0.02em;
-    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     position: fixed;
     z-index: 100;
     top: 0;
-    right: 0;
     bottom: 0;
+    right: 0;
     left: 0;
     background-color: var(--clr-neutral-100);
     visibility: hidden;
@@ -578,6 +590,9 @@ textarea.form-field__input {
   }
   .toggle:checked ~ .navbar__content {
     visibility: visible;
+  }
+  .header__info {
+    margin-top: auto;
   }
 }
 

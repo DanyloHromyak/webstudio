@@ -201,9 +201,6 @@
   .team__members {
     grid-template-columns: repeat(2, 1fr);
   }
-  .member-card__img {
-    width: 374px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -211,7 +208,11 @@
     grid-template-columns: 1fr;
   }
 }
-
+@media (max-width: 420px) {
+  .team .container {
+    padding: 0;
+  }
+}
 /* --- TEAM --- */
 
 /* ===== CLIENTS ===== */
@@ -257,7 +258,13 @@
 
 @media (max-width: 576px) {
   .clients__list {
-    grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 370px) {
+  .clients__list {
+    grid-template-columns: 1fr;
   }
 }
 
