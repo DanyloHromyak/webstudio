@@ -37,7 +37,8 @@ body {
   margin: 0 auto;
 }
 
-ul {
+ul,
+li {
   list-style: none;
 }
 
@@ -63,10 +64,9 @@ a:hover {
   color: var(--clr-accent);
 }
 
-button:hover {
-  cursor: pointer;
-  background-color: var(--clr-accent-darken);
-  transition: background-color 0.2s;
+img {
+  display: block;
+  max-width: 100%;
 }
 
 section {
