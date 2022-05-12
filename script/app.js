@@ -20,13 +20,9 @@ function closeModal() {
     document.body.style.overflow = "auto";
   }, 300);
 }
-// contactModalElem.addEventListener("click", () => {
-//   contactModalElem.classList.remove("modal_open");
-//   document.body.style.overflow = "auto";
-// });
 
-window.onkeyup = function (event) {
-  if (event.keyCode == 27) {
+window.onkeyup = e => {
+  if (e.keyCode == 27) {
     closeModal();
   }
 };
