@@ -28,11 +28,11 @@
     <div class="modal" id="contactModal" style="display: none;">
       <div class="modal__content">
         <button class="modal__close" id="contactModalClose" type="button">
-          <img src="img/cross.svg" alt="">
+          <svg width="18" height="18" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
         </button>
-        <h3 class="modal__title">Залишіть свої дані і ми вам передзвонимо</h3>
-  
+        
         <form class="modal__form">
+          <h3 class="modal__title">Залишіть свої дані і ми вам передзвонимо</h3>
           <div class="form-field">
             <label for="nameInput" class="form-field__label">Ім'я</label>
             <div class="form-field__control">
@@ -72,12 +72,11 @@
           </div>
   
           <div class="checkbox">
-            <!-- <label for="contactAccept" class="checkbox__label"> -->
-              <input type="checkbox" class="checkbox__input" id="contactAccept">
+            <input type="checkbox" class="checkbox__input" id="contactAccept">
 
+            <label for="contactAccept" class="checkbox__text">Дозволяю розсилку і приймаю
+              <a href="#" target="_blank" class="link__underline">Умови договору</a>
             </label>
-            <label for="contactAccept" class="checkbox__text">Дозволяю розсилку і приймаю</label>
-            <a href="#" target="_blank" class="link__underline">Умови договору</a>
           </div>
 
           <button type="submit" class="modal__btn">Надіслати</button>
