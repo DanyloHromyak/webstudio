@@ -1,5 +1,4 @@
 /* ===== GLOBAL STYLES ===== */
-
 :root {
   --clr-accent: #2196f3;
   --clr-light-text: #757575;
@@ -22,8 +21,13 @@ html {
 }
 
 body {
+  height: 100%;
   font-family: "Roboto", sans-serif;
   color: var(--clr-dark-text);
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -337,6 +341,7 @@ section {
 }
 
 .toggle:checked ~ .navbar__content {
+  height: 100vh;
   clip-path: circle(1150px at top right);
 }
 
@@ -403,21 +408,21 @@ section {
     margin-bottom: 48px;
   }
   .menu__list {
-    gap: 30px;
+    gap: 10px;
     flex-direction: column;
-    line-height: 47px;
-    font-size: 40px;
-    margin-top: 32px; 
+    line-height: 30px;
+    font-size: 2em;
+    margin-top: 3rem; 
   }
   .menu__link {
     padding: 0.4em 0;
   }
   .header__phone {
     color: var(--clr-accent);
-    font-size: 34px;
-    line-height: 40px;
+    font-size: 26px;
+    line-height: 30px;
     order: -1;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
   }
   .header__email {
     color: var(--clr-light-text);
