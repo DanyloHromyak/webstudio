@@ -113,6 +113,7 @@ const displayListButtons = () => {
     .join("");
   btnContainer.innerHTML = categoryBtns;
   const filterBtns = btnContainer.querySelectorAll(".filter-btn");
+  filterBtns[0].classList.add("tag__active");
 
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", (e) => {
