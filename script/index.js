@@ -27,3 +27,9 @@ window.onkeyup = (e) => {
 
 contactBtnElem.addEventListener("click", openModal);
 closeContactModalBtnElem.addEventListener("click", closeModal);
+
+window.onclick = (e) => {
+  if (e.target == contactModalElem) {
+    closeModal();
+  }
+}
