@@ -28,12 +28,12 @@
 }
 
 .tags {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  width: 60%;
+  margin: 0 auto 50px;
   row-gap: 16px;
   column-gap: 8px;
-  margin-bottom: 50px;
 }
 
 .tag__active {
@@ -117,6 +117,9 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+  .tags {
+    width: 80%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -124,7 +127,7 @@
     grid-template-columns: 1fr;
   }
   .tags {
-    justify-content: start;
+    width: 100%;  
   }
 }
 /* --- PROJECTS --- */

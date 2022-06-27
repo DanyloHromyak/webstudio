@@ -68,10 +68,6 @@ a:hover {
   color: var(--clr-accent);
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
 
 section {
   margin-bottom: 94px;
@@ -134,7 +130,7 @@ section {
 .form__control {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  padding: 0.93em 1em;
+  padding: 15px 16px;
   background-color: transparent;
   color: #fff;
   transition: border-color 75ms;
@@ -142,6 +138,7 @@ section {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: 0.03em;
 }
 
 .form__control:focus,
@@ -160,8 +157,10 @@ section {
   background-color: var(--clr-accent);
   border: none;
   color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.06em;
   border-radius: 4px;
-  padding: 0.7em 1.5em;
+  padding: 10px 24px;
 }
 
 .btn:focus {
