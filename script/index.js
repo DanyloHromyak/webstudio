@@ -8,6 +8,9 @@ function openModal() {
     contactModalElem.classList.add("modal_open");
   }, 0);
   document.body.style.overflow = "hidden";
+
+  const modalContentElem = document.querySelector(".modal__content");
+  modalContentElem.style.overflow = "auto";
   contactModalElem.querySelector("input").focus();
 }
 
