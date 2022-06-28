@@ -8,7 +8,9 @@ function openModal() {
     contactModalElem.classList.add("modal_open");
   }, 0);
   document.body.style.overflow = "hidden";
-
+  if (window.innerWidth > 991) {
+    document.body.style.marginRight = "17px";
+  }
   const modalContentElem = document.querySelector(".modal__content");
   modalContentElem.style.overflow = "auto";
   contactModalElem.querySelector("input").focus();
@@ -18,6 +20,7 @@ function closeModal() {
   contactModalElem.classList.remove("modal_open");
   setTimeout(() => {
     contactModalElem.style.display = "none";
+    document.body.style.marginRight = '0';
     document.body.style.overflow = "auto";
   }, 300);
 }
